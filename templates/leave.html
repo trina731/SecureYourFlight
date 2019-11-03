@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Leave Now</title>
+  <meta name="description" content="Leave Now">
+  <meta name="author" content="SitePoint">
+
+  <!--
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="leave.css">
+	-->
+
+</head>
+
+<body>
+
+	<style type="text/css">
+
+		.spacer {
+			height: 4vh;
+			padding: 0px;
+			margin: 0px;
+		}
+		.header {
+			background-color: #EFE4DC;
+			color: #12225D;
+
+			padding-bottom: 5vh;
+			padding-top: 5vh;
+			padding-left: 0px;
+			padding-right: 0px;
+
+			margin-top: 0vh;
+			margin-bottom: 4vh;
+			margin-left: 2vw;
+			margin-right: 2vw;
+
+			border-bottom: 1vh solid #12225D;
+
+			width: 96vw;
+			height: 4vh;
+			text-align: center;
+		}
+		.leave {
+			border-bottom: 1vh solid #6C70AB;
+			color: #6C70AB;
+		}
+
+		body {
+			background-color: #0C1210;
+			margin: 0px;
+			padding: 0px;
+			font-family: "Arial Black";
+			text-transform: uppercase;
+		}
+
+		.container {
+			background-size: cover;
+			background-color: #CBB7A9;
+			color: #0C1210;
+
+			padding-bottom: 5vh;
+			padding-top: 5vh;
+			padding-left: 5vw;
+			padding-right: 5vw;
+
+			margin-top: 0px;
+			margin-bottom: 4vh;
+			margin-left: 2vw;
+			margin-right: 2vw;
+
+			width: 86vw;
+			height: 63vh;
+
+
+			position: relative;
+			text-align: center;
+		}
+		.button {
+			opacity: 0.9;
+
+			width: 37vw;
+			height: 10vh;
+			font-size: 40vh;
+			text-transform: uppercase;
+			font-weight: 900;
+
+			border-radius: 0px;
+			text-align: center;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+
+			margin-left: 2vw;
+			margin-right: 2vw;
+
+			padding: 2vw;
+
+			letter-spacing:2px;
+
+			border: 3px solid #0C1210;
+			color: #0C1210;
+			background-color: #6C70AB;
+		}
+
+		.button-group .button:hover {
+			background-color: #0C1210;
+			color: #CBB7A9;
+		}
+    .message {
+      font-size: 20px;
+      color: #6C70AB;
+    }
+	</style>
+
+	<!--
+	<script src="js/scripts.js"></script>
+	-->
+
+	<div id="input" class="spacer"></div>
+
+	<div id="leave" class="header leave">
+		Leave Now <!--<a href="./home.html" class="home"> | Home </a>-->
+	</div>
+
+	<div class="container">
+		<span class="message"> {{message}}{{time}} </span><br />
+
+    <br /><br />
+		<form class="form-inline" method="POST" action="/home/">
+			<button class="button" type="submit">Return Home</button>
+		</form>
+    <br /><br />
+
+    Your flight is at {{flightTime}} <br />
+    We estimate your boarding time at 30 minutes before your scheduled flight time <br />
+    Your drive will take {{driveTime}} <br />
+    Your estimated security wait time is {{security}} minutes
+
+
+	</div>
+
+</body>
+</html>

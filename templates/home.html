@@ -1,0 +1,298 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Secure Your Flight</title>
+  <!-- Security Seconds -->
+  <meta name="description" content="Secure Your Flight">
+  <meta name="author" content="SitePoint">
+
+<!--
+  <link rel="stylesheet" href="./templates/style.css">
+  <link rel="stylesheet" href="./templates/leave.css">
+  <link rel="stylesheet" href="./templates/input.css">
+-->
+
+</head>
+
+<body>
+	<!--
+	<script src="js/scripts.js"></script>
+	-->
+
+	<style type="text/css">
+
+		.custom-select {
+		  position: relative;
+		  background-color: #0C1210;
+		  color: #EFE4DC;
+		  font-family: Arial;
+		  text-transform: uppercase;
+		  padding-left: 5vw;
+		  padding-right: 5vw;
+		  padding-bottom: 2vh;
+		  padding-top: 2vh;
+
+		  margin-top: 2vh;
+		  margin-bottom: 2vh;
+		  margin-left: 2vw;
+		  margin-right: 2vw;
+
+		  width: 40vw;
+		  height: 10vh;
+
+		  font-size: 20px;
+
+		}
+		.text-field {
+			position: relative;
+			background-color: #0C1210;
+			color: #EFE4DC;
+			font-family: Arial;
+			text-transform: uppercase;
+			padding-left: 2vw;
+			padding-right: 2vw;
+			padding-bottom: 2vh;
+			padding-top: 2vh;
+
+			margin-top: 2vh;
+			margin-bottom: 2vh;
+			margin-left: 2vw;
+			margin-right: 2vw;
+
+			width: 30vw;
+			height: 5vh;
+
+			font-size: 20px;
+		}
+
+
+
+		.spacer {
+			height: 4vh;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.header {
+			background-color: #EFE4DC;
+			color: #12225D;
+
+			padding-bottom: 5vh;
+			padding-top: 5vh;
+			padding-left: 0px;
+			padding-right: 0px;
+
+			margin-top: 0vh;
+			margin-bottom: 4vh;
+			margin-left: 2vw;
+			margin-right: 2vw;
+
+			border-bottom: 1vh solid #12225D;
+
+			width: 96vw;
+			height: 4vh;
+			text-align: center;
+		}
+
+		body {
+			background-color: #0C1210;
+			margin: 0px;
+			padding: 0px;
+			font-family: "Arial Black";
+			text-transform: uppercase;
+		}
+
+		.container {
+			background-size: cover;
+			background-color: #CBB7A9;
+			color: #0C1210;
+
+			padding-bottom: 5vh;
+			padding-top: 5vh;
+			padding-left: 5vw;
+			padding-right: 5vw;
+
+			margin-top: 0px;
+			margin-bottom: 4vh;
+			margin-left: 2vw;
+			margin-right: 2vw;
+
+			width: 86vw;
+			height: 63vh;
+
+
+			position: relative;
+			text-align: center;
+		}
+
+		.button-group {
+		  position: absolute;
+		  top: 50%;
+		  -ms-transform: translateY(-50%);
+		  transform: translateY(-50%);
+
+		  padding-right: 2vw;
+		  padding-left: 2vw;
+		}
+
+		.button-group .button {
+			opacity: 0.9;
+
+			width: 37vw;
+			height: 25vh;
+			font-size: 40vh;
+			text-transform: uppercase;
+			font-weight: 900;
+
+			border-radius: 0px;
+			text-align: center;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+
+			margin-left: 2vw;
+			margin-right: 2vw;
+
+			padding: 2vw;
+
+			letter-spacing:2px;
+
+			border: 3px solid #0C1210;
+			color: #0C1210;
+		}
+		.button-group .leave {
+			background-color: #6C70AB;
+		}
+		.button-group .input {
+			background-color: #B9B1E0;
+		}
+		.button-group .button:hover {
+			background-color: #0C1210;
+			color: #CBB7A9;
+		}
+
+		.submit-btn {
+			opacity: 0.9;
+
+			width: 20vw;
+			height: 10vh;
+			font-size: 40vh;
+			text-transform: uppercase;
+			font-weight: 900;
+
+			border-radius: 0px;
+			text-align: center;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+
+			margin-left: 2vw;
+			margin-right: 2vw;
+
+			padding: 2vw;
+
+			letter-spacing:2px;
+
+			border: 2px solid #0C1210;
+			color: #0C1210;
+			background-color: #CBB7A9;
+		}
+		.submit-btn:hover {
+
+			background-color: #0C1210;
+			color: #CBB7A9;
+		}
+
+		.home {
+			color: #12225D;
+			text-decoration: none;
+		}
+		.input {
+			border-bottom: 1vh solid #B9B1E0;
+			color: #B9B1E0;
+		}
+		.leave {
+			border-bottom: 1vh solid #6C70AB;
+			color: #6C70AB;
+		}
+	</style>
+
+
+
+	<div id="home" class="spacer"></div>
+
+	<div class="header">
+		Secure Your Flight
+	</div>
+
+	<div class="container">
+	<center>
+		<div class="button-group">
+			<button class="leave button" onclick="document.getElementById('leave').scrollIntoView();">Leave Now</button>
+			<button class="input button" onclick="document.getElementById('input').scrollIntoView();">Input Wait Times</button>
+		</div>
+	</center>
+	</div>
+
+	<div id="leave" class="spacer"></div>
+	<div class="header leave">
+		Leave Now <a href="#home" class="home"> | Home </a>
+	</div>
+
+	<div class="container">
+		<form class="form-inline" method="POST" action="/leave/">
+		  <div class="form-group">
+		    <div class="input-group">
+				Select an airport
+				<select class="custom-select" name= airports method="GET" action="/">
+				    <option value="{{airports[0]}}" selected>{{airports[0]}}</option>
+				    {% for airport in airports[1:] %}
+				    <option value= "{{airport}}" SELECTED>{{airport}}</option>"
+				    {% endfor %}
+				</select>
+				<br />
+  				Flight number <input class="text-field" type="text" name="fnum">
+  				<br />
+  				Home Address <input class="text-field" type="text" name="address">
+  				<br />
+
+  				<br />
+			</div>
+		    <button onclick="" type="submit" class="submit-btn">Submit</button>
+		  </div>
+		</form>
+	</div>
+
+
+	<div id="input" class="spacer"></div>
+	<div class="header input">
+		Input Data <a href="#home" class="home"> | Home </a>
+	</div>
+
+	<div class="container">
+		<form class="form-inline" method="POST" action="/input/">
+		  <div class="form-group">
+		    <div class="input-group">
+				Select an airport
+				<select class="custom-select" name= airports2 method="GET" action="/">
+				    <option value="{{airports[0]}}" selected>{{airports[0]}}</option>
+				    {% for airport in airports[1:] %}
+				    <option value= "{{airport}}" SELECTED>{{airport}}</option>"
+				    {% endfor %}
+				</select>
+				<br />
+  				Current Wait Time <input class="text-field" type="text" name="waittime">
+
+  				<br />
+			</div>
+		    <button type="submit" class="submit-btn">Submit</button>
+		  </div>
+		</form>
+	</div>
+
+
+</body>
+</html>
