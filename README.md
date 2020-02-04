@@ -13,15 +13,15 @@ Sqlite, Python, Flask
 
 ## What Inspired Us
 
-We're always too late or too early to the airport.
+We often find ourselves in situations where we arrive too early or too late to the airport. Either we end up having to wait for long periods of time for our flight, or even worse, missing it altogether. We wanted to build an app that would allow us to estimate exactly when our flight leaves (based on crowdsourcing data from security check in lines) so we could arrive exactly on time for our flights.
 
 ## What We Learned
 
-We had no web dev experience before this so we learned about many new skills and how to create a full stack framework and access APIs
+We learned about many new skills including web development, how to create a full stack framework, and access APIs
 
 ## Challenges Faced
 
-Because of our little experience with web dev, we found debugging difficult.
+We used a lot of new technologies so we faced the most trouble with debugging our errors.
 
 ## Authors
 
