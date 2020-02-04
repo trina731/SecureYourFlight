@@ -17,7 +17,7 @@ We often find ourselves in situations where we arrive too early or too late to t
 
 ## What We Learned
 
-We learned about many new skills including web development, how to create a full stack framework, and access APIs
+We used HTML/CSS for the frontend design, Python Flask for backend and integration, and SQLLite for the database. We learned about many new skills including web development, how to create a full stack framework, and access APIs
 
 ## Challenges Faced
 
