@@ -20,7 +20,7 @@ We're always too late or too early to the airport - we wanted to develop an appl
 
 ## What We Learned
 
-We had no prior web development experience, so we gained many new skills in this area such as:
+With no prior web development experience, so we gained many new skills in this area such as:
 - Python
   - Flask
   - making API requests
