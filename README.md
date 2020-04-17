@@ -1,27 +1,32 @@
 # Secure Your Flight
 
-Crowdsourcing Security and Check-in Line Times for Airplane flights
+Full-stack web application to crowdsource security and check-in line times for airplane flights. Uses various APIs to estimate a departure time to leave for the airport
 
-## Getting Started
+## Run Locally
 
-Run app.py on your local machine
+Run app.py on your local machine using `python app.py`
 
-### Prerequisites
+### Requirements
 
-Sqlite, Python, Flask
+- Sqlite
+- Python
+- Flask
 
 
 ## What Inspired Us
 
-We're always too late or too early to the airport.
+We're always too late or too early to the airport - we wanted to develop an application thd elp us decide upon the optimal time to leave for the airport. We realized that much of our uncertainity came from wait times in the airport so we aimed to solve this problem by crowdsourcing this data.
+
 
 ## What We Learned
 
-We had no web dev experience before this so we learned about many new skills and how to create a full stack framework and access APIs
+We had no prior web development experience, so we gained many new skills in this area such as:
+- Python
+  - Flask
+  - making API requests
+- Vanilla HTML
+- integration of front-end and back-end technologies
 
-## Challenges Faced
-
-Because of our little experience with web dev, we found debugging difficult.
 
 ## Authors
 
